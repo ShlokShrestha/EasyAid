@@ -7,6 +7,11 @@
 .banner {
   margin-top: 75px;
 }
+.banner img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
 .overlay {
   width: 100%;
   height: 100%;
@@ -16,8 +21,13 @@
   justify-content: center;
   flex-direction: column;
 }
-.overlay .donatebtn,
-.readbtn, .joinbtn {
+.overlay .donatebtn:hover {
+  border: 2px solid #fdbb00;
+  background-color: transparent !important;
+}
+.donatebtn,
+.readbtn,
+.joinbtn {
   border: none;
   transition: all 0.5s;
   padding: 10px 35px;
@@ -25,20 +35,20 @@
   color: black;
   background-color: #fdbb00;
 }
-.overlay .donatebtn:hover {
-  border: 2px solid #fdbb00;
-  background-color: transparent !important;
-}
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.cause-section .row .cards:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+/* page-section-margin */
+.about-page,
+.causes-page,
+.contact-page {
+  margin-top: 75px;
 }
 
+.page-header .page-header-img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+/* about-section-css */
 .about-section .about-us {
   width: 100%;
   height: 100%;
@@ -48,7 +58,6 @@
   justify-content: center;
   flex-direction: column;
 }
-
 
 .about-section .about-us .row h1::before {
   content: "";
@@ -67,25 +76,71 @@
   object-fit: cover;
 }
 
+/* about-page-css */
+.about-page .row h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 64px;
+  height: 4px;
+  border-radius: 2px;
+  background: #c99701;
+}
+
+/* feature-cause-section */
+.cause-section .row .cards:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
 .causes-card .row p {
   text-align: justify;
 }
+
+/* join-us-section */
 .join-us {
   background: #60bc0f;
-
 }
+
+/* Footer-section-css */
 .footer {
   background-color: #1f1f1f;
 }
-.footer ul{
+.footer ul {
   list-style: none;
   padding: 0;
 }
 .footer ul li {
   margin: 10px 0;
 }
-.footer ul li a{
+.footer ul li a {
   text-decoration: none;
   color: #ffff;
+}
 
+/* contact-page-css */
+.contact-page .form input,
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #e0dfdf;
+}
+.contact-page .form textarea {
+  resize: none;
+  margin: 5px 0;
+}
+.contact-page .form .submit {
+  padding: 10px 45px;
+  outline: none;
+  border: none;
+  margin: 5px 0;
+  background-color: #fdbb00;
+  color: #000000;
+}
+.contact-page .row p {
+  margin-bottom: 5px;
 }

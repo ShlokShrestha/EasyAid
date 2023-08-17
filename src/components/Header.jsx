@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
@@ -36,34 +36,34 @@ const Header = () => {
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center fw-semibold">
                 <li class="nav-item mx-2">
-                  <a class="nav-link " aria-current="page" href="#">
+                  <Link class="nav-link " to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link" href="#">
+                  <Link class="nav-link" to="/about">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link" href="#">
+                  <Link class="nav-link" to="/causes">
                     Causes
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link" href="#">
+                  <Link class="nav-link" to="/gallery">
                     Gallery
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link" href="#">
+                  <Link class="nav-link" to="/news">
                     News
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link" href="#">
+                  <Link class="nav-link" to="/contact">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

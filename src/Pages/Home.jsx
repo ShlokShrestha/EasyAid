@@ -1,5 +1,7 @@
 import React from "react";
-import Causes from "../components/Causes";
+import FeatureCauses from "../components/FeatureCauses";
+import ServerPeople from "../components/ServerPeople";
+import MajorCauses from "../components/MajorCauses";
 
 const Home = () => {
   return (
@@ -25,70 +27,11 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Major-causes-section */}
       <section className="cause-section">
-        <div className="container py-5">
-          <div className="text-center my-5">
-            <h1>Our Major Causes</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-              obcaecati!
-            </p>
-          </div>
-          <div className="row px-2 gy-4">
-            <div className="col-lg-4 col-md-6 col-12">
-              <div class="bg-light cards ">
-                <div class="card-body text-center ">
-                  <h4 class="card-title py-5">Give Donation</h4>
-                  <img
-                    src="https://preview.colorlib.com/theme/seelife/img/causes/c1.png.webp"
-                    alt=""
-                    className="pb-3"
-                  />
-                  <p class="card-text px-4 py-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ipsam eveniet doloribus maxime aliquid debitis numquam fugit
-                    rerum iure necessitatibus labore?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-12">
-              <div class="bg-light cards ">
-                <div class="card-body text-center ">
-                  <h4 class="card-title py-5">Give Inspiration</h4>
-                  <img
-                    src="https://preview.colorlib.com/theme/seelife/img/causes/c2.png.webp"
-                    alt=""
-                    className="pb-3"
-                  />
-                  <p class="card-text px-4 py-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ipsam eveniet doloribus maxime aliquid debitis numquam fugit
-                    rerum iure necessitatibus labore?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-12">
-              <div class="bg-light cards ">
-                <div class="card-body text-center ">
-                  <h4 class="card-title py-5">Become Bolunteer</h4>
-                  <img
-                    src="https://preview.colorlib.com/theme/seelife/img/causes/c3.png.webp"
-                    alt=""
-                    className="pb-3"
-                  />
-                  <p class="card-text px-4 py-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Ipsam eveniet doloribus maxime aliquid debitis numquam fugit
-                    rerum iure necessitatibus labore?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <MajorCauses />
       </section>
+      {/* About-section */}
       <section className="about-section mt-5">
         <div className="position-relative d-flex justify-content-center align-items-center">
           <img
@@ -126,64 +69,15 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Feature-section */}
       <section className="feature-causes ">
-        <div className="text-center py-5">
-          <h1>Featured Causes</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            obcaecati!
-          </p>
-        </div>
-        <div className="pb-5">
-          <Causes />
-        </div>
+        <FeatureCauses />
       </section>
+      {/* Serve-people-section */}
       <section className="serve-people bg-light">
-        <div className="text-center py-5">
-          <h1>Featured Causes</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-            obcaecati!
-          </p>
-        </div>
-        <div className="container">
-          <div className="row py-5 px-4 gy-4">
-            <div className="col-lg-4 col-md-6 col-12 text-center">
-              <img
-                src="https://preview.colorlib.com/theme/charitee/assets/img/icon/services1.svg"
-                alt=""
-              />
-              <h4 className="mt-4">Pure Food & Water</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                alias ullam! Atque quas odio quis?
-              </p>
-            </div>
-            <div className="col-lg-4 col-md-6 col-12 text-center">
-              <img
-                src="https://preview.colorlib.com/theme/charitee/assets/img/icon/services2.svg"
-                alt=""
-              />
-              <h4 className="mt-4">Health & Medicine</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                alias ullam! Atque quas odio quis?
-              </p>
-            </div>
-            <div className="col-lg-4 col-md-6 col-12 text-center">
-              <img
-                src="https://preview.colorlib.com/theme/charitee/assets/img/icon/services3.svg"
-                alt=""
-              />
-              <h4 className="mt-4">Education</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                alias ullam! Atque quas odio quis?
-              </p>
-            </div>
-          </div>
-        </div>
+        <ServerPeople />
       </section>
+      {/* Join-with-us-section */}
       <section className="join-us py-5 ">
         <div className="text-center my-5 text-white">
           <h1>Become a volunteer</h1>

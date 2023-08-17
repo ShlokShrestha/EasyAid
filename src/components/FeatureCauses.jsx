@@ -1,10 +1,17 @@
 import React from "react";
 import Data from "../Data/CauseData";
-import {AiOutlineHeart} from "react-icons/ai"
+import { AiOutlineHeart } from "react-icons/ai";
 const Causes = () => {
   return (
     <section className="causes-card">
-      <div className="container px-3">
+      <div className="text-center py-5">
+        <h1>Featured Causes</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+          obcaecati!
+        </p>
+      </div>
+      <div className="container pb-5 px-3">
         <div className="row gy-4">
           {Data.map((item) => (
             <div className="col-lg-4 col-md-6 col-12 " key={item.id}>
@@ -23,7 +30,10 @@ const Causes = () => {
                   </div>
                   <div className="d-flex justify-content-between my-2 ">
                     <button className=" readbtn">Donate</button>
-                    <span className="my-auto text-success"><AiOutlineHeart size={22} className="me-1"/>{item.donate} Donors</span>
+                    <span className="my-auto text-success">
+                      <AiOutlineHeart size={22} className="me-1" />
+                      {item.donate} Donors
+                    </span>
                   </div>
                 </div>
               </div>
