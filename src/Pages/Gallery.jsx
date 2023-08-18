@@ -5,7 +5,7 @@ const Gallery = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className="gallery-page">
       <section className="page-header">
         <div className="position-relative d-flex justify-content-center align-items-center">
           <img
@@ -20,10 +20,10 @@ const Gallery = () => {
         </div>
       </section>
       <div className="container">
-        <div className="row gy-4 py-5">
+        <div className="row gy-4 py-5 px-2">
           {Data.map((item) => (
             <div className="col-lg-4 col-md-6 col-12" key={item.id}>
-              <div class="card border-0" style={{ width: "25rem" }}>
+              <div class="card border-0">
                 <img src={item.image} class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">{item.title}</h5>

@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.navbar .navbar-nav .nav-item .nav-link:hover{
+  color: #60bc0f !important;
+ 
+}
 .banner {
   margin-top: 75px;
 }
@@ -25,6 +29,7 @@
 .readbtn,
 .joinbtn {
   border: none;
+  font-weight: 600;
   transition: all 0.5s;
   padding: 10px 35px;
   cursor: pointer;
@@ -33,12 +38,17 @@
 }
 .overlay .donatebtn:hover {
   border: 2px solid #fdbb00;
+  color: #ffff;
   background-color: transparent !important;
+}
+.readbtn:hover, .joinbtn:hover{
+  background-color: #ffca39;
 }
 /* page-section-margin */
 .about-page,
 .causes-page,
-.contact-page {
+.contact-page,
+.gallery-page {
   margin-top: 75px;
 }
 
