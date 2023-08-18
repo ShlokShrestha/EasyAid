@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Data from "../Data/GalleryData";
 const Gallery = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <section className="page-header">
@@ -15,6 +19,20 @@ const Gallery = () => {
           </div>
         </div>
       </section>
+      <div className="container">
+        <div className="row gy-4 py-5">
+          {Data.map((item) => (
+            <div className="col-lg-4 col-md-6 col-12" key={item.id}>
+              <div class="card border-0" style={{ width: "25rem" }}>
+                <img src={item.image} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">{item.title}</h5>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

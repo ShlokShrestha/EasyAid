@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-light fixed-top py-3">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top py-3 shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            Offcanvas navbar
-          </a>
+          <Link class="navbar-brand d-flex align-items-center" to="/">
+            <img src="/img/easyaid.png" alt="logo" width={130} />
+          </Link>
           <button
             class="navbar-toggler border-0 shadow-none"
             type="button"
@@ -53,11 +53,6 @@ const Header = () => {
                 <li class="nav-item mx-2">
                   <Link class="nav-link" to="/gallery">
                     Gallery
-                  </Link>
-                </li>
-                <li class="nav-item mx-2">
-                  <Link class="nav-link" to="/news">
-                    News
                   </Link>
                 </li>
                 <li class="nav-item mx-2">

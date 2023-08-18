@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="contact-page">
       <section className="page-header">
@@ -35,9 +38,7 @@ const Contact = () => {
                     rows="8"
                     placeholder="Message"
                   ></textarea>
-                  <button className="submit ">
-                    Submit
-                  </button>
+                  <button className="submit ">Submit</button>
                 </form>
               </div>
             </div>

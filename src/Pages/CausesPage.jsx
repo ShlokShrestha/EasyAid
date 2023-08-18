@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MajorCauses from "../components/MajorCauses";
 import FeatureCauses from "../components/FeatureCauses";
 
 const Causes = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="causes-page">
       <div className="page-header">

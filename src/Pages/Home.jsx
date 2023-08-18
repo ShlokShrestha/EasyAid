@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import FeatureCauses from "../components/FeatureCauses";
 import ServerPeople from "../components/ServerPeople";
 import MajorCauses from "../components/MajorCauses";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <section className="banner">

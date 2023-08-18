@@ -2,7 +2,7 @@ import React from "react";
 
 const MajorCauses = () => {
   return (
-    <div>
+    <div className="cause-section">
       <div className="container py-5">
         <div className="text-center my-5">
           <h1>Our Major Causes</h1>

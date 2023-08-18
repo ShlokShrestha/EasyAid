@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .banner {
   margin-top: 75px;
 }
@@ -21,10 +20,7 @@
   justify-content: center;
   flex-direction: column;
 }
-.overlay .donatebtn:hover {
-  border: 2px solid #fdbb00;
-  background-color: transparent !important;
-}
+
 .donatebtn,
 .readbtn,
 .joinbtn {
@@ -34,6 +30,10 @@
   cursor: pointer;
   color: black;
   background-color: #fdbb00;
+}
+.overlay .donatebtn:hover {
+  border: 2px solid #fdbb00;
+  background-color: transparent !important;
 }
 /* page-section-margin */
 .about-page,

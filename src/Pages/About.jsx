@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ServerPeople from "../components/ServerPeople";
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="about-page">
       <section className="page-header">
