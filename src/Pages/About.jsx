@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import ServerPeople from "../components/ServerPeople";
+
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
