@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ServerPeople from "../components/ServerPeople";
-
+import { Link } from "react-router-dom";
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -42,7 +42,6 @@ const About = () => {
                   incidunt, eaque quos, explicabo et perspiciatis consequatur
                   obcaecati eveniet fugiat saepe fugit molestias! Hic,
                 </p>
-                <button className=" readbtn">Read Me</button>
               </div>
             </div>
           </div>
@@ -57,7 +56,9 @@ const About = () => {
             you're divided deep leave on the medicene moved us land years
             living.
           </p>
-          <button className="joinbtn mt-4">Join with us</button>
+          <Link to="/contact" className="joinbtn mt-4">
+            Join with us
+          </Link>
         </div>
       </div>
     </div>

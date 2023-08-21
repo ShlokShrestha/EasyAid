@@ -2,12 +2,12 @@ import React,{useEffect} from "react";
 import FeatureCauses from "../components/FeatureCauses";
 import ServerPeople from "../components/ServerPeople";
 import MajorCauses from "../components/MajorCauses";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
   return (
     <>
       <section className="banner">
@@ -26,7 +26,7 @@ const Home = () => {
                 two itself upon you'll dominion waters man second good you
                 they're divided upon winged were replenish night
               </p>
-              <button className="donatebtn  text-w">Donate Now</button>
+              <Link to='/contact' className="donatebtn  text-w">Donate Now</Link>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@ const Home = () => {
                     incidunt, eaque quos, explicabo et perspiciatis consequatur
                     obcaecati eveniet fugiat saepe fugit molestias! Hic,
                   </p>
-                  <button className=" readbtn">Read Me</button>
+                  <Link to='/about' className=" readbtn">Read Me</Link>
                 </div>
               </div>
             </div>

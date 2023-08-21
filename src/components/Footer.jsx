@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer">
@@ -22,25 +23,19 @@ const Footer = () => {
             <div className="mt-4">
               <ul>
                 <li>
-                  <a href="#">Privacy Polticy</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="#">Become a Volunteer</a>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <a href="#">Donate</a>
+                  <Link to="/causes">Causes</Link>
                 </li>
                 <li>
-                  <a href="#">Testimonials</a>
+                  <Link to="/gallery">Gallery</Link>
                 </li>
                 <li>
-                  <a href="#">Causes</a>
-                </li>
-                <li>
-                  <a href="#">Portfolio</a>
-                </li>
-                <li>
-                  <a href="#">News</a>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -50,7 +45,7 @@ const Footer = () => {
             <p className="mt-4 w-50">
               When a child gets access to good food, it can change.
             </p>
-            <button className=" readbtn">Join Us Today</button>
+            <Link to='/contact' className=" readbtn">Join Us Today</Link>
           </div>
           <div className="col-lg-3 col-md-6 col-6">
             <h3>Contact Us</h3>

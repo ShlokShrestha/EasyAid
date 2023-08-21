@@ -1,6 +1,7 @@
 import React from "react";
 import Data from "../Data/CauseData";
 import { AiOutlineHeart } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const Causes = () => {
   return (
     <section className="causes-card">
@@ -29,7 +30,7 @@ const Causes = () => {
                     <span className="text-success">Goal: ${item.goal}</span>
                   </div>
                   <div className="d-flex justify-content-between my-2 ">
-                    <button className=" readbtn">Donate</button>
+                    <Link to='/contact' className=" readbtn">Donate</Link>
                     <span className="my-auto text-success">
                       <AiOutlineHeart size={22} className="me-1" />
                       {item.donate} Donors
