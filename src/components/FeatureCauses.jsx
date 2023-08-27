@@ -10,6 +10,7 @@ const Causes = () => {
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum,
           obcaecati!
+          
         </p>
       </div>
       <div className="container pb-5 px-3">
